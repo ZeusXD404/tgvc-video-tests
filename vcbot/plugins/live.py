@@ -25,7 +25,7 @@ async def stream_msg_handler(_, m: Message):
     status = "Processing.."
     msg = await m.reply(status)
     player = Player(m.chat.id)
-    stream_url = "https://feed.play.mv/live/10005200/7EsSDh7aX6/master.m3u8"
+    stream_url = "http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8"
     player.meta["is_live"] = True
     try:
         stream_url = m.text.split(' ', 1)[1]
